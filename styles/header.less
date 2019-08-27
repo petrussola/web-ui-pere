@@ -6,14 +6,15 @@ header {
     .flex-settings(row, space-between, center);
     .nav-left {
         flex-grow: 1;
-        .flex-settings(row, space-evenly, flex-start);
+        .flex-settings(row, flex-start, flex-start);
         margin: 0 1rem;
         .nav-item {
             position: relative;
+            margin-left: 2rem;
             &::before {
                 content: '·';
                 top: 0;
-                left: -1.5rem;
+                left: -1rem;
                 position: absolute;
             }
         }

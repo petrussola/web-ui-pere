@@ -194,12 +194,10 @@ h3 {
 }
 .container {
   width: 100%;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
 .jumbotron {
-  width: 100%;
   height: 70vh;
   background: url("/img/jumbotron.jpg");
   background-size: cover;
@@ -215,6 +213,16 @@ h3 {
   flex-flow: column wrap;
   justify-content: center;
   align-items: flex-start;
+}
+.main-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.main-content div {
+  width: 40%;
+  border: 1px solid red;
 }
 @font-face {
   font-family: 'Open Sans';
@@ -237,17 +245,18 @@ header .nav-left {
   flex-grow: 1;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: flex-start;
   margin: 0 1rem;
 }
 header .nav-left .nav-item {
   position: relative;
+  margin-left: 2rem;
 }
 header .nav-left .nav-item::before {
   content: '·';
   top: 0;
-  left: -1.5rem;
+  left: -1rem;
   position: absolute;
 }
 header .title {
