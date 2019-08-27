@@ -6,6 +6,9 @@
       padding: 0 10%;
       .flex-settings(row, flex-start, center);
       position: relative;
+      @media @mobile {
+        height: 150px;
+      }
       &::after {
           content: '';
           width: 50px;
@@ -15,6 +18,10 @@
           top: 75px;
           left: 20%;
           transform: rotate(45deg);
+          @media @mobile {
+            top: 125px;
+            left: 40%;
+          }
       }
     }
     .action-item-bottom {
@@ -23,5 +30,9 @@
         background-size: cover;
         padding: 3rem 10%;
         .flex-settings(column, center, flex-start);
+        @media @mobile {
+          align-items: center;
+          text-align: center;
+        }
     }
   }

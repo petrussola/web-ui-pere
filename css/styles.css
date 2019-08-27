@@ -493,6 +493,11 @@ header .nav-right .nav-item {
   align-items: center;
   position: relative;
 }
+@media (max-width: 500px) {
+  .action-item .action-item-top {
+    height: 150px;
+  }
+}
 .action-item .action-item-top::after {
   content: '';
   width: 50px;
@@ -503,6 +508,12 @@ header .nav-right .nav-item {
   left: 20%;
   transform: rotate(45deg);
 }
+@media (max-width: 500px) {
+  .action-item .action-item-top::after {
+    top: 125px;
+    left: 40%;
+  }
+}
 .action-item .action-item-bottom {
   height: 25rem;
   background: url('/img/action-item.jpg');
@@ -512,6 +523,12 @@ header .nav-right .nav-item {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+}
+@media (max-width: 500px) {
+  .action-item .action-item-bottom {
+    align-items: center;
+    text-align: center;
+  }
 }
 footer {
   display: flex;
