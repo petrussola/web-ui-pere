@@ -215,8 +215,32 @@ h5 {
   align-items: flex-start;
 }
 .jumbotron .sub-jumbotron {
-  padding-top: 2rem;
-  padding-left: 10%;
+  padding: 2rem 10%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+.action-item {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+.action-item .action-item-top {
+  height: 100px;
+  background: #00A7B6;
+  padding: 0 10%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.action-item .action-item-bottom {
+  height: 30rem;
+  background: url('/img/action-item.jpg');
+  background-size: cover;
+  padding: 5rem 10%;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;

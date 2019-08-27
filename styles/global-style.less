@@ -71,10 +71,24 @@ h5 {
   background-size: cover;
   .flex-settings(row, flex-start, flex-start);
   .sub-jumbotron {
-    padding-top: 2rem;
-    padding-left: 10%;
+    padding: 2rem 10%;
     .flex-settings(column, center, flex-start);
   }
 }
 
-
+.action-item {
+  .flex-settings(column, center, stretch);
+  .action-item-top {
+    height: 100px; 
+    background: @background-blue;
+    padding: 0 10%;
+    .flex-settings(row, flex-start, center);
+  }
+  .action-item-bottom {
+      height: 30rem;
+      background: url('/img/action-item.jpg');
+      background-size: cover;
+      padding: 5rem 10%;
+      .flex-settings(column, center, flex-start);
+  }
+}
