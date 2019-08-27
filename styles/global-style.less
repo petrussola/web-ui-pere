@@ -9,8 +9,20 @@ html body {
 p {
     font-size: 1rem;
     color: @black-text;
-    &.nav {
+    .nav {
         color: @gray-nav;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 2rem;
+    &.green {
+        color: @main-green;
     }
 }
 
@@ -23,5 +35,18 @@ p {
 
 header {
     background: yellow;
+    height: 3rem;
     .flex-settings(row, space-between, center);
+    .nav-left {
+        flex-grow: 1;
+        .flex-settings(row, space-evenly, center);
+    }
+    .title {
+        flex-grow: 2;
+        .flex-settings(row, space-evenly, center);
+    }
+    .nav-right {
+        flex-grow: 1;
+        .flex-settings(row, space-evenly, center);
+    }
 }
