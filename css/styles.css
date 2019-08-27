@@ -135,6 +135,7 @@ html body {
 p {
   font-size: 1rem;
   color: #212121;
+  line-height: 1.5rem;
 }
 p.nav {
   color: #767676;
