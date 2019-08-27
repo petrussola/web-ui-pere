@@ -213,16 +213,16 @@ h5 {
   background: url("/img/jumbotron.jpg");
   background-size: cover;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   justify-content: flex-start;
   align-items: flex-start;
-}
-.jumbotron .sub-jumbotron {
   padding: 2rem 10%;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: flex-start;
+}
+@media (max-width: 500px) {
+  .jumbotron {
+    align-items: center;
+    text-align: center;
+  }
 }
 .floating {
   width: 85%;
@@ -239,6 +239,18 @@ h5 {
   background-color: white;
   border-radius: 0.5rem;
 }
+@media (max-width: 500px) {
+  .floating {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    top: 550px;
+    height: 500px;
+    z-index: 1;
+  }
+}
 .floating .float-left-image {
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
@@ -250,6 +262,11 @@ h5 {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .floating .float-left-image {
+    width: 100%;
+  }
+}
 .floating .float-left-image img {
   width: auto;
   height: 90%;
@@ -258,6 +275,11 @@ h5 {
 .floating .float-right-text {
   width: 70%;
   padding: 2rem;
+}
+@media (max-width: 500px) {
+  .floating .float-right-text {
+    width: 100%;
+  }
 }
 @font-face {
   font-family: 'Open Sans';

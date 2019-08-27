@@ -72,11 +72,12 @@ h5 {
   height: 70vh;
   background: url("/img/jumbotron.jpg");
   background-size: cover;
-  .flex-settings(row, flex-start, flex-start);
-  .sub-jumbotron {
-    padding: 2rem 10%;
-    .flex-settings(column, center, flex-start);
-  }
+  .flex-settings(column, flex-start, flex-start);
+  padding: 2rem 10%;
+  @media @mobile {
+      align-items: center;
+      text-align: center;
+  } 
 }
 
 .floating {
@@ -88,22 +89,35 @@ h5 {
   box-shadow: 0.1rem 0.1rem 1rem @gray-nav;
   .flex-settings(row, space-between, center);
   background-color: white;
-  border-radius: 0.50rem;
+  border-radius: 0.5rem;
+  @media @mobile {
+    .flex-settings(column, space-between, center);
+    flex-wrap: nowrap;
+    top: 550px;
+    height: 500px;
+    z-index: 1;
+  }
   .float-left-image {
-    border-top-left-radius: 0.50rem;
-    border-bottom-left-radius: 0.50rem;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
     height: 250px;
     width: 30%;
     background-color: @background-blue-photo;
     .flex-settings(row, center, center);
+    @media @mobile {
+        width: 100%;
+    }
     img {
-        width: auto;
-        height: 90%;
-        margin: 0 auto;
+      width: auto;
+      height: 90%;
+      margin: 0 auto;
     }
   }
   .float-right-text {
     width: 70%;
     padding: 2rem;
+    @media @mobile {
+        width: 100%;
+    }
   }
 }
