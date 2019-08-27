@@ -26,19 +26,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-weight: bold;
-    font-size: 2.5rem;
+    .font-size(2.5rem);
     padding: 1rem 0;
 }
 
 h2 {
-    font-weight: bold;
-    font-size: 2rem;
+    .font-size(2rem);
 }
 
 h3 {
-    font-size: 1.75rem;
-    font-weight: bold;
+    .font-size(1.75rem);
+}
+
+h4 {
+    .font-size(1.5rem);
+}
+
+h5 {
+    .font-size(1.25rem);
 }
 
 .main-button {
@@ -68,9 +73,13 @@ h3 {
 }
 
 .main-content {
-    .flex-settings(row, space-around, center);
-    div {
+    .reduced-width();
+    .flex-settings(row, center, center);
+    .main-content-section {
+        padding: 2rem;
         width: 40%;
+        height: 250px;
         border: 1px solid red;
+        .flex-settings(column, space-evenly, flex-start);
     }
 }
