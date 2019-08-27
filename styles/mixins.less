@@ -42,3 +42,15 @@
     position: absolute;
   }
 }
+
+.dot-before-nav-item-mobile() {
+    position: relative;
+    margin-left: 2rem;
+    &::before {
+      content: "·";
+      top: 0;
+      left: -1rem;
+      position: absolute;
+      display: none;
+    }
+  }
