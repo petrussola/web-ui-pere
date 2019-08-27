@@ -1,0 +1,27 @@
+{
+  "name": "20190827-buildweek-illservesoup",
+  "version": "1.0.0",
+  "description": "Welcome to my first build week project: I'll serve soup. This is a \"simple\" HTML and CSS page that hopefully displays everything I have learnt so far. Feedback welcome. less",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "live-server",
+    "less": "less-watch-compiler ./styles ./css styles.less"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bw-ill-serve-soup/web-ui-pere.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bw-ill-serve-soup/web-ui-pere/issues"
+  },
+  "homepage": "https://github.com/bw-ill-serve-soup/web-ui-pere#readme",
+  "dependencies": {
+    "less": "^3.10.3",
+    "less-watch-compiler": "^1.13.0",
+    "live-server": "^1.2.1"
+  }
+}
