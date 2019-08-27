@@ -4,9 +4,15 @@ footer {
     width: 100%;
     padding: 4rem 7.5%;
     background: @background-gray;
-    .flex-settings(row, space-between, center);
+    .flex-settings(row, center, center);
+    .footer-top-header {
+        .flex-settings(column, center, center);
+        padding: 0 2rem;
+    }
     .footer-top-nav {
         .flex-settings(column, spread-between, flex-start);
+        border-left: 1px solid @menu-separator-footer;
+        padding: 0 3rem;
     }
   }
   .footer-bottom {

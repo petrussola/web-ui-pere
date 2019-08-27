@@ -139,6 +139,7 @@ p {
 }
 p.nav {
   color: #767676;
+  line-height: 2rem;
 }
 h1,
 h2,
@@ -436,14 +437,23 @@ footer .footer-top {
   background: #F4F9ED;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+}
+footer .footer-top .footer-top-header {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
 }
 footer .footer-top .footer-top-nav {
   display: flex;
   flex-flow: column wrap;
   justify-content: spread-between;
   align-items: flex-start;
+  border-left: 1px solid #E7EBE0;
+  padding: 0 3rem;
 }
 footer .footer-bottom {
   width: 100%;
