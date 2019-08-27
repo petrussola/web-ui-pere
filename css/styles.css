@@ -136,8 +136,8 @@ p {
   font-size: 1rem;
   color: #212121;
 }
-p .nav {
-  color: #B1B1B1;
+p.nav {
+  color: #767676;
 }
 h1,
 h2,
@@ -152,11 +152,17 @@ h2 {
   font-size: 2rem;
 }
 h2.green {
-  color: #81B649;
+  color: #7CB342;
 }
 h3 {
   font-size: 1.75rem;
   font-weight: bold;
+}
+.secondary-button {
+  border: 1px solid #7CB342;
+  padding: 0.8rem;
+  border-radius: 0.25rem;
+  color: #7CB342;
 }
 .container {
   width: 85%;
@@ -164,9 +170,16 @@ h3 {
   display: flex;
   flex-direction: column;
 }
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
+}
 header {
-  background: yellow;
-  height: 3rem;
+  height: 5rem;
+  padding: 1rem 0;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -202,11 +215,4 @@ header .nav-right {
   flex-flow: row wrap;
   justify-content: space-evenly;
   align-items: center;
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
 }

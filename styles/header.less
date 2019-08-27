@@ -1,0 +1,28 @@
+header {
+    // background: yellow;
+    height: 5rem;
+    padding: 1rem 0;
+    .flex-settings(row, space-between, center);
+    .nav-left {
+        flex-grow: 1;
+        .flex-settings(row, space-evenly, flex-start);
+        margin: 0 1rem;
+        .nav-item {
+            position: relative;
+            &::before {
+                content: '·';
+                top: 0;
+                left: -1.5rem;
+                position: absolute;
+            }
+        }
+    }
+    .title {
+        flex-grow: 3;
+        .flex-settings(row, space-evenly, center);
+    }
+    .nav-right {
+        flex-grow: 1;
+        .flex-settings(row, space-evenly, center);
+    }
+}

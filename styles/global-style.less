@@ -9,7 +9,7 @@ html body {
 p {
     font-size: 1rem;
     color: @black-text;
-    .nav {
+    &.nav {
         color: @gray-nav;
     }
 }
@@ -31,6 +31,13 @@ h3 {
     font-weight: bold;
 }
 
+.secondary-button {
+    border: 1px solid @main-green;
+    padding: 0.8rem;
+    border-radius: 0.25rem;
+    color: @main-green;
+}
+
 .container {
     width: 85%;
     margin: 0 auto;
@@ -38,30 +45,3 @@ h3 {
     flex-direction: column;
 }
 
-header {
-    background: yellow;
-    height: 3rem;
-    .flex-settings(row, space-between, center);
-    .nav-left {
-        flex-grow: 1;
-        .flex-settings(row, space-evenly, flex-start);
-        margin: 0 1rem;
-        .nav-item {
-            position: relative;
-            &::before {
-                content: '·';
-                top: 0;
-                left: -1.5rem;
-                position: absolute;
-            }
-        }
-    }
-    .title {
-        flex-grow: 3;
-        .flex-settings(row, space-evenly, center);
-    }
-    .nav-right {
-        flex-grow: 1;
-        .flex-settings(row, space-evenly, center);
-    }
-}
