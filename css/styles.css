@@ -138,6 +138,10 @@ html body {
   display: flex;
   flex-direction: column;
 }
+.container header p {
+  font-size: 1rem;
+  color: red;
+}
 header {
   background: yellow;
   display: flex;
@@ -150,9 +154,4 @@ header {
   font-weight: 400;
   font-display: swap;
   src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
-}
-.flexRow {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
 }
