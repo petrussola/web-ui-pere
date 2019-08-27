@@ -253,7 +253,7 @@ header .nav-left .nav-item {
   margin-left: 2rem;
 }
 header .nav-left .nav-item::before {
-  content: '·';
+  content: "·";
   top: 0;
   left: -1rem;
   position: absolute;
@@ -468,8 +468,9 @@ footer .footer-top .footer-top-nav {
 }
 footer .footer-bottom {
   width: 100%;
-  padding: 2rem 7.5%;
-  border: 1px solid red;
+  padding: 1.5rem 7.5%;
+  background: #E6F8FB;
+  border-top: 1px solid #91E4EE;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -480,4 +481,14 @@ footer .footer-bottom .footer-nav-right {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+}
+footer .footer-bottom .footer-nav-right .nav-item {
+  position: relative;
+  margin-left: 2rem;
+}
+footer .footer-bottom .footer-nav-right .nav-item::before {
+  content: "·";
+  top: 0;
+  left: -1rem;
+  position: absolute;
 }

@@ -1,33 +1,44 @@
 .flex-settings(@direction, @justify-content, @align-items) {
-    display:flex;
-    flex-flow: @direction wrap;
-    justify-content: @justify-content;
-    align-items: @align-items;
+  display: flex;
+  flex-flow: @direction wrap;
+  justify-content: @justify-content;
+  align-items: @align-items;
 }
 
 .reduced-width() {
-    width: 85%;
-    margin: 0 auto;
+  width: 85%;
+  margin: 0 auto;
 }
 
 .main-button() {
-    font-size: 1.5rem;
-    border: 1px solid @main-green;
-    padding: 1rem;
-    background: @main-green;
-    color: @white;
-    border-radius: 0.25rem;
-    margin: 2rem 0;
+  font-size: 1.5rem;
+  border: 1px solid @main-green;
+  padding: 1rem;
+  background: @main-green;
+  color: @white;
+  border-radius: 0.25rem;
+  margin: 2rem 0;
 }
 
 .secondary-button() {
-    border: 1px solid @main-green;
-    padding: 0.8rem;
-    border-radius: 0.25rem;
-    color: @main-green;
+  border: 1px solid @main-green;
+  padding: 0.8rem;
+  border-radius: 0.25rem;
+  color: @main-green;
 }
 
 .font-size(@font-size) {
-    font-size: @font-size;
-    font-weight: bold;
+  font-size: @font-size;
+  font-weight: bold;
+}
+
+.dot-before-nav-item() {
+  position: relative;
+  margin-left: 2rem;
+  &::before {
+    content: "·";
+    top: 0;
+    left: -1rem;
+    position: absolute;
+  }
 }

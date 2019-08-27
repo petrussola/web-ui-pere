@@ -1,33 +1,26 @@
 header {
-    // background: yellow;
-    .reduced-width();
-    height: 5rem;
-    padding: 1rem 0;
-    .flex-settings(row, space-between, center);
-    .nav-left {
-        flex-grow: 1;
-        .flex-settings(row, flex-start, flex-start);
-        margin: 0 1rem;
-        .nav-item {
-            position: relative;
-            margin-left: 2rem;
-            &::before {
-                content: '·';
-                top: 0;
-                left: -1rem;
-                position: absolute;
-            }
-        }
+  // background: yellow;
+  .reduced-width();
+  height: 5rem;
+  padding: 1rem 0;
+  .flex-settings(row, space-between, center);
+  .nav-left {
+    flex-grow: 1;
+    .flex-settings(row, flex-start, flex-start);
+    margin: 0 1rem;
+    .nav-item {
+      .dot-before-nav-item();
     }
-    .title {
-        flex-grow: 3;
-        .flex-settings(row, space-evenly, center);
+  }
+  .title {
+    flex-grow: 3;
+    .flex-settings(row, space-evenly, center);
+  }
+  .nav-right {
+    flex-grow: 1;
+    .flex-settings(row, flex-end, center);
+    .nav-item {
+      margin-right: 2rem;
     }
-    .nav-right {
-        flex-grow: 1;
-        .flex-settings(row, flex-end, center);
-        .nav-item {
-            margin-right: 2rem;
-        }
-    }
+  }
 }
