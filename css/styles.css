@@ -223,6 +223,33 @@ h5 {
   justify-content: center;
   align-items: flex-start;
 }
+.floating {
+  width: 85%;
+  margin: 0 auto;
+  height: 250px;
+  border: 1px solid red;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.floating .float-left-image {
+  height: 250px;
+  width: 30%;
+  background-color: #BEEEF5;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.floating .float-left-image img {
+  width: auto;
+  height: 90%;
+  margin: 0 auto;
+}
+.floating .float-right-text {
+  width: 70%;
+}
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;

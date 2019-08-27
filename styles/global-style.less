@@ -78,4 +78,23 @@ h5 {
   }
 }
 
-
+.floating {
+  .reduced-width();
+  height: 250px;
+  border: 1px solid red;
+  .flex-settings(row, space-between, center);
+  .float-left-image {
+    height: 250px;
+    width: 30%;
+    background-color: @background-blue-photo;
+    .flex-settings(row, center, center);
+    img {
+        width: auto;
+        height: 90%;
+        margin: 0 auto;
+    }
+  }
+  .float-right-text {
+    width: 70%;
+  }
+}
