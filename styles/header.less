@@ -4,6 +4,11 @@ header {
   height: 5rem;
   padding: 1rem 0;
   .flex-settings(row, space-between, center);
+  @media @mobile {
+    .flex-settings(column, center, center);
+    width: 100%;
+    height: 12rem;
+  }
   .nav-left {
     flex-grow: 1;
     .flex-settings(row, flex-start, flex-start);

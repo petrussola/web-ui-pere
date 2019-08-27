@@ -276,6 +276,16 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 12rem;
+  }
+}
 header .nav-left {
   flex-grow: 1;
   display: flex;
