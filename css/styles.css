@@ -447,6 +447,17 @@ footer .footer-top .footer-top-header {
   align-items: center;
   padding: 0 2rem;
 }
+footer .footer-top .footer-top-header .social-media-nav {
+  height: 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer-top .footer-top-header .social-media-nav img {
+  height: 100%;
+  width: auto;
+}
 footer .footer-top .footer-top-nav {
   display: flex;
   flex-flow: column wrap;
