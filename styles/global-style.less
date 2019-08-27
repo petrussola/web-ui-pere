@@ -62,7 +62,7 @@ h5 {
 }
 
 .container {
-  width: 100%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -101,23 +101,23 @@ h5 {
     border-top-left-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
     height: 250px;
-    width: 30%;
+    max-width: 30%;
     background-color: @background-blue-photo;
     .flex-settings(row, center, center);
     @media @mobile {
-        width: 100%;
+        max-width: 100%;
     }
     img {
-      width: auto;
+      max-width: auto;
       height: 90%;
       margin: 0 auto;
     }
   }
   .float-right-text {
-    width: 70%;
+    max-width: 70%;
     padding: 2rem;
     @media @mobile {
-        width: 100%;
+        max-width: 100%;
     }
   }
 }

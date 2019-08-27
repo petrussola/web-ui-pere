@@ -1,7 +1,7 @@
 footer {
   .flex-settings(column, center, center);
   .footer-top {
-    width: 100%;
+    max-width: 100%;
     padding: 4rem 7.5%;
     background: @background-gray;
     .flex-settings(row, center, center);
@@ -13,7 +13,7 @@ footer {
         .flex-settings(row, center, center);
         img {
           height: 100%;
-          width: auto;
+          max-width: auto;
         }
       }
     }
@@ -24,7 +24,7 @@ footer {
     }
   }
   .footer-bottom {
-    width: 100%;
+    max-width: 100%;
     padding: 1.5rem 7.5%;
     background: @background-gray-footer-lower;
     border-top: 1px solid @footer-separator;

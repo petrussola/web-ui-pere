@@ -1,12 +1,12 @@
 .flex-settings(@direction, @justify-content, @align-items) {
   display: flex;
-  flex-flow: @direction wrap;
+  flex-direction: @direction;
   justify-content: @justify-content;
   align-items: @align-items;
 }
 
 .reduced-width() {
-  width: 85%;
+  max-width: 85%;
   margin: 0 auto;
 }
 
