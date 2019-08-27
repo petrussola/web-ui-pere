@@ -25,7 +25,7 @@ h6 {
   &.white {
     color: @white;
   }
-  &.green {
+  &.green-text {
     color: @main-green;
   }
 }
@@ -102,7 +102,7 @@ h5 {
       box-shadow: 5px 5px 15px #d0d0d0;
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
+      justify-content: center;
       align-items: stretch;
 
       .buttons {
@@ -115,14 +115,14 @@ h5 {
           margin: 0 0.1rem;
         }
 
-        .red {
+        .red-button {
           background: red;
           margin-left: 0.2rem;
         }
-        .yellow {
+        .yellow-button {
           background: #f7e76a;
         }
-        .green {
+        .green-button {
           background: #63bb81;
         }
       }
@@ -130,5 +130,17 @@ h5 {
           flex-grow: 9;
       }
     }
+    .window2 {
+        position: absolute;
+        top: 4.5rem;
+        left: 4.5rem;
+        z-index: 0;
+      }
+    .window3 {
+        position: absolute;
+        top: 7.5rem;
+        left: 7.5rem;
+        z-index: 0;
+      }
   }
 }
