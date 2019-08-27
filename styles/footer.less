@@ -1,0 +1,21 @@
+footer {
+  .flex-settings(column, center, center);
+  .footer-top {
+    width: 100%;
+    padding: 4rem 7.5%;
+    background: @background-gray;
+    .flex-settings(row, space-between, center);
+    .footer-top-nav {
+        .flex-settings(column, spread-between, flex-start);
+    }
+  }
+  .footer-bottom {
+    width: 100%;
+    padding: 2rem 7.5%;
+    border: 1px solid red;
+    .flex-settings(row, space-between, center);
+    .footer-nav-right {
+      .flex-settings(row, space-between, center);
+    }
+  }
+}
