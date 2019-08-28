@@ -592,7 +592,7 @@ footer .footer-bottom .footer-nav-right .nav-item::before {
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
   height: 250px;
-  max-width: 30%;
+  width: 30%;
   background-color: #BEEEF5;
   display: flex;
   flex-direction: row;
@@ -601,20 +601,20 @@ footer .footer-bottom .footer-nav-right .nav-item::before {
 }
 @media (max-width: 500px) {
   .floating .float-left-image {
-    max-width: 100%;
+    width: 100%;
   }
 }
 .floating .float-left-image img {
-  max-width: auto;
+  width: auto;
   height: 90%;
   margin: 0 auto;
 }
 .floating .float-right-text {
-  max-width: 70%;
+  width: 70%;
   padding: 2rem;
 }
 @media (max-width: 500px) {
   .floating .float-right-text {
-    max-width: 100%;
+    width: 100%;
   }
 }
