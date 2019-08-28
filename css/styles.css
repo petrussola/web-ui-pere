@@ -603,6 +603,9 @@ footer .footer-bottom .footer-nav-right .nav-item::before {
     height: 50rem;
   }
 }
+.jumbotron.about-page {
+  height: 50vh;
+}
 .floating {
   width: 85%;
   margin: 0 auto;
