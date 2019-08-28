@@ -208,24 +208,8 @@ h5 {
   flex-direction: column;
   position: relative;
 }
-.jumbotron {
-  height: 70vh;
-  background: url("/img/jumbotron.jpg");
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 2rem 10%;
-}
-@media (max-width: 500px) {
-  .jumbotron {
-    align-items: center;
-    text-align: center;
-  }
-}
 .floating {
-  max-width: 85%;
+  width: 85%;
   margin: 0 auto;
   position: absolute;
   top: 375px;
@@ -289,7 +273,7 @@ h5 {
   src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
 }
 header {
-  max-width: 85%;
+  width: 85%;
   margin: 0 auto;
   height: 5rem;
   padding: 1rem 0;
@@ -383,7 +367,7 @@ header .nav-right .nav-item {
   background: #63BB81;
 }
 .main-content {
-  max-width: 85%;
+  width: 85%;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -616,5 +600,21 @@ footer .footer-bottom .footer-nav-right .nav-item::before {
 @media (max-width: 500px) {
   footer .footer-bottom .footer-nav-right .nav-item::before {
     content: "";
+  }
+}
+.jumbotron {
+  height: 70vh;
+  background: url("/img/jumbotron.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 2rem 10%;
+}
+@media (max-width: 500px) {
+  .jumbotron {
+    align-items: center;
+    text-align: center;
   }
 }
