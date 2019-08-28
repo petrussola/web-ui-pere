@@ -649,7 +649,7 @@ footer .footer-bottom .footer-nav-right .nav-item::before {
   border: 1px solid red;
   border-radius: 0.25rem;
   height: 3rem;
-  width: 50%;
+  width: 70%;
   margin: 1rem 0;
 }
 .floating .float-right-text .text-input-wrapper::before {
@@ -665,6 +665,16 @@ footer .footer-bottom .footer-nav-right .nav-item::before {
 }
 .floating .float-right-text .text-input-wrapper.text-input-password::before {
   content: "password";
+}
+.floating .float-right-text button {
+  font-size: 1.5rem;
+  border: 1px solid #7CB342;
+  padding: 1rem;
+  background: #7CB342;
+  color: #FFFFFF;
+  border-radius: 0.25rem;
+  margin: 2rem 0;
+  width: 70%;
 }
 @media (max-width: 500px) {
   .floating .float-right-text {
