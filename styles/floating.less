@@ -1,31 +1,31 @@
 .floating {
   .reduced-width();
   position: absolute;
-  top: 60vh;
+  top: @home-top-float;
   left: 7.5%;
-  height: 250px;
+  height: @home-float-height;
   box-shadow: 0.1rem 0.1rem 1rem @gray-nav;
   .flex-settings(row, space-between, center);
   background-color: white;
   border-radius: 0.5rem;
   &.login-page {
-    top: 100px;
-    height: 500px;
+    top: @login-top-float;
+    height: @login-float-height;
     @media @mobile, @tablet {
-        top: 150px;
+        height: @login-top-float-responsive;
     }
   }
   @media @mobile, @tablet {
     .flex-settings(column, space-between, center);
     flex-wrap: nowrap;
-    top: 550px;
-    height: 500px;
+    top: @home-top-float-responsive;
+    height: @home-float-height-responsive;
     z-index: 1;
   }
   .float-left-image {
     border-top-left-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
-    height: 250px;
+    height: @home-float-height;
     width: 30%;
     background-color: @background-blue-photo;
     .flex-settings(row, center, center);

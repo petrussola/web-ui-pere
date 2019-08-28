@@ -232,7 +232,10 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
+  header.login-page {
+    height: 7rem;
+  }
 }
 @media (max-width: 500px), (max-width: 800px) {
   header {
@@ -602,7 +605,7 @@ footer .footer-bottom .footer-nav-right .nav-item::before {
   position: absolute;
   top: 60vh;
   left: 7.5%;
-  height: 250px;
+  height: 30vh;
   box-shadow: 0.1rem 0.1rem 1rem #767676;
   display: flex;
   flex-direction: row;
@@ -612,12 +615,12 @@ footer .footer-bottom .footer-nav-right .nav-item::before {
   border-radius: 0.5rem;
 }
 .floating.login-page {
-  top: 100px;
-  height: 500px;
+  top: 20vh;
+  height: 60vh;
 }
 @media (max-width: 500px), (max-width: 800px) {
   .floating.login-page {
-    top: 150px;
+    height: 100vh;
   }
 }
 @media (max-width: 500px), (max-width: 800px) {
@@ -627,15 +630,15 @@ footer .footer-bottom .footer-nav-right .nav-item::before {
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
-    top: 550px;
-    height: 500px;
+    top: 80vh;
+    height: 80vh;
     z-index: 1;
   }
 }
 .floating .float-left-image {
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
-  height: 250px;
+  height: 30vh;
   width: 30%;
   background-color: #BEEEF5;
   display: flex;
