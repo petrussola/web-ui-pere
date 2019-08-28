@@ -596,7 +596,7 @@ footer .footer-bottom .footer-nav-right .nav-item::before {
   .jumbotron {
     align-items: center;
     text-align: center;
-    height: 180vh;
+    height: 50rem;
   }
 }
 .floating {
