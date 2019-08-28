@@ -49,13 +49,20 @@
         margin: 1rem 0;
       }
       &::before {
-        content: "testtest";
+        content: "";
         position: absolute;
         top: -0.5rem;
         left: 1rem;
         background-color: @white;
         padding: 0 1rem;
       }
+      &.text-input-email::before {
+        content: "email";
+      }
+      &.text-input-password::before {
+        content: "password";
+      }
+
     }
     @media @mobile {
       width: 100%;

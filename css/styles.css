@@ -653,12 +653,18 @@ footer .footer-bottom .footer-nav-right .nav-item::before {
   margin: 1rem 0;
 }
 .floating .float-right-text .text-input-wrapper::before {
-  content: "testtest";
+  content: "";
   position: absolute;
   top: -0.5rem;
   left: 1rem;
   background-color: #FFFFFF;
   padding: 0 1rem;
+}
+.floating .float-right-text .text-input-wrapper.text-input-email::before {
+  content: "email";
+}
+.floating .float-right-text .text-input-wrapper.text-input-password::before {
+  content: "password";
 }
 @media (max-width: 500px) {
   .floating .float-right-text {
