@@ -229,6 +229,11 @@ header {
   align-items: center;
 }
 @media (max-width: 500px) {
+  header.login-page {
+    height: 7rem;
+  }
+}
+@media (max-width: 500px) {
   header {
     display: flex;
     flex-direction: column;
@@ -272,6 +277,11 @@ header .nav-right {
 }
 header .nav-right .nav-item {
   margin-right: 2rem;
+}
+@media (max-width: 500px) {
+  header .nav-right.login-page {
+    display: none;
+  }
 }
 .window {
   width: 300px;
@@ -606,7 +616,7 @@ footer .footer-bottom .footer-nav-right .nav-item::before {
 }
 @media (max-width: 500px) {
   .floating.login-page {
-    top: 200px;
+    top: 150px;
   }
 }
 @media (max-width: 500px) {

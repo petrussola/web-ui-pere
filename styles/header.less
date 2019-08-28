@@ -4,11 +4,17 @@ header {
   height: 5rem;
   padding: 1rem 0;
   .flex-settings(row, space-between, center);
+  &.login-page {
+    @media @mobile {
+      height: 7rem;
+    }
+  }
   @media @mobile {
     .flex-settings(column, center, center);
     width: 100%;
     height: 12rem;
   }
+
   .nav-left {
     flex-grow: 1;
     .flex-settings(row, flex-start, flex-start);
@@ -26,6 +32,11 @@ header {
     .flex-settings(row, flex-end, center);
     .nav-item {
       margin-right: 2rem;
+    }
+    &.login-page {
+      @media @mobile {
+        display: none;
+      }
     }
   }
 }
