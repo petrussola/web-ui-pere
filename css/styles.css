@@ -187,6 +187,10 @@ h5 {
   font-size: 1.25rem;
   font-weight: bold;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 .main-button {
   font-size: 1.5rem;
   border: 1px solid #7CB342;
