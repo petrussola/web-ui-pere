@@ -12,7 +12,7 @@
     top: @login-top-float;
     height: @login-float-height;
     @media @mobile, @tablet {
-        height: @login-top-float-responsive;
+      height: @login-top-float-responsive;
     }
   }
   @media @mobile, @tablet {
@@ -28,6 +28,9 @@
     height: @home-float-height;
     width: 30%;
     background-color: @background-blue-photo;
+    &.login-page {
+      height: @login-float-height;
+    }
     .flex-settings(row, center, center);
     @media @mobile, @tablet {
       width: 100%;
@@ -42,7 +45,7 @@
     width: 70%;
     padding: 2rem;
     .text-input-wrapper {
-        position: relative;
+      position: relative;
       .text-input {
         display: block;
         border: 1px solid @gray-nav;
@@ -52,7 +55,7 @@
         margin: 1rem 0;
         padding: 1rem 0;
         @media @mobile, @tablet {
-            width: 100%;
+          width: 100%;
         }
       }
       &::before {
@@ -71,14 +74,14 @@
       }
     }
     button {
-        .main-button();
-        width: 70%;
-        margin: 1rem 0;
-        height: 3rem;
-        font-size: 1rem;
-        @media @mobile, @tablet {
-            width: 100%;
-        }
+      .main-button();
+      width: 70%;
+      margin: 1rem 0;
+      height: 3rem;
+      font-size: 1rem;
+      @media @mobile, @tablet {
+        width: 100%;
+      }
     }
     @media @mobile, @tablet {
       width: 100%;

@@ -650,6 +650,9 @@ footer .footer-bottom .footer-nav-right .nav-item::before {
   justify-content: center;
   align-items: center;
 }
+.floating .float-left-image.login-page {
+  height: 60vh;
+}
 @media (max-width: 500px), (max-width: 800px) {
   .floating .float-left-image {
     width: 100%;
