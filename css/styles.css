@@ -646,11 +646,12 @@ footer .footer-bottom .footer-nav-right .nav-item::before {
 }
 .floating .float-right-text .text-input-wrapper .text-input {
   display: block;
-  border: 1px solid red;
+  border: 1px solid #767676;
   border-radius: 0.25rem;
   height: 3rem;
   width: 70%;
   margin: 1rem 0;
+  padding: 1rem 0;
 }
 .floating .float-right-text .text-input-wrapper::before {
   content: "";
@@ -658,7 +659,7 @@ footer .footer-bottom .footer-nav-right .nav-item::before {
   top: -0.5rem;
   left: 1rem;
   background-color: #FFFFFF;
-  padding: 0 1rem;
+  padding: 0 0.5rem;
 }
 .floating .float-right-text .text-input-wrapper.text-input-email::before {
   content: "email";
@@ -675,6 +676,9 @@ footer .footer-bottom .footer-nav-right .nav-item::before {
   border-radius: 0.25rem;
   margin: 2rem 0;
   width: 70%;
+  margin: 1rem 0;
+  height: 3rem;
+  font-size: 1rem;
 }
 @media (max-width: 500px) {
   .floating .float-right-text {

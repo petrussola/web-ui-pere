@@ -42,11 +42,12 @@
         position: relative;
       .text-input {
         display: block;
-        border: 1px solid red;
+        border: 1px solid @gray-nav;
         border-radius: 0.25rem;
         height: 3rem;
         width: 70%;
         margin: 1rem 0;
+        padding: 1rem 0;
       }
       &::before {
         content: "";
@@ -54,7 +55,7 @@
         top: -0.5rem;
         left: 1rem;
         background-color: @white;
-        padding: 0 1rem;
+        padding: 0 0.5rem;
       }
       &.text-input-email::before {
         content: "email";
@@ -66,6 +67,9 @@
     button {
         .main-button();
         width: 70%;
+        margin: 1rem 0;
+        height: 3rem;
+        font-size: 1rem;
     }
     @media @mobile {
       width: 100%;
