@@ -4,23 +4,28 @@
   flex-wrap: wrap;
   padding: 100px 0;
   @media @mobile {
+      width: 100%;
       flex-flow: column nowrap;
-      padding-top: 450px;
-  }
-  .main-content-section {
-    position: relative;
-    padding: 1rem 3rem;
-    width: 45%;
-    height: 300px;
-    .flex-settings(column, space-evenly, flex-start);
-    @media @mobile {
+      padding: 5rem 0 0 0;
+    }
+    .main-content-section {
+      position: relative;
+      padding: 1rem 3rem;
+      width: 45%;
+      height: 300px;
+      .flex-settings(column, space-evenly, flex-start);
+      @media @mobile {
+        padding: 0 2rem;
         width: 100%;
+        height: 320px;
     }
     &.all-width {
       width: 90%;
       height: auto;
       @media @mobile {
         width: 100%;
+        align-items: center;
+        text-align: center;
       }
     }
 
@@ -78,7 +83,16 @@
         width: 300px;
         height: 300px;
         @media @mobile {
-            width: 100%;
+          height: 400px;
+          width: 100%;
+          text-align:center;
+        }
+        img {
+          @media @mobile {
+            width: auto;
+            height: 100%;
+            text-align: center;
+          }
         }
     }
   }

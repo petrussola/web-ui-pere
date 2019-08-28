@@ -321,8 +321,9 @@ header .nav-right .nav-item {
 }
 @media (max-width: 500px) {
   .main-content {
+    width: 100%;
     flex-flow: column nowrap;
-    padding-top: 450px;
+    padding: 5rem 0 0 0;
   }
 }
 .main-content .main-content-section {
@@ -337,7 +338,9 @@ header .nav-right .nav-item {
 }
 @media (max-width: 500px) {
   .main-content .main-content-section {
+    padding: 0 2rem;
     width: 100%;
+    height: 320px;
   }
 }
 .main-content .main-content-section.all-width {
@@ -347,6 +350,8 @@ header .nav-right .nav-item {
 @media (max-width: 500px) {
   .main-content .main-content-section.all-width {
     width: 100%;
+    align-items: center;
+    text-align: center;
   }
 }
 .main-content .main-content-section .window {
@@ -402,7 +407,17 @@ header .nav-right .nav-item {
 }
 @media (max-width: 500px) {
   .main-content .main-content-section .main-content-photo {
+    height: 400px;
     width: 100%;
+    background: red;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .main-content .main-content-section .main-content-photo img {
+    width: auto;
+    height: 100%;
+    text-align: center;
   }
 }
 .action-item {
@@ -560,6 +575,7 @@ footer .footer-bottom .footer-nav-right .nav-item::before {
   .jumbotron {
     align-items: center;
     text-align: center;
+    height: 180vh;
   }
 }
 .floating {
