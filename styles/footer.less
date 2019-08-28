@@ -5,7 +5,7 @@ footer {
     padding: 4rem 7.5%;
     background: @background-gray;
     .flex-settings(row, center, center);
-    @media @mobile {
+    @media @mobile, @tablet {
       flex-direction: column;
       padding-top: 2rem;
     }
@@ -25,7 +25,7 @@ footer {
       .flex-settings(column, spread-between, flex-start);
       border-left: 1px solid @menu-separator-footer;
       padding: 0 3rem;
-      @media @mobile {
+      @media @mobile, @tablet {
         align-items: center;
         border-left: none;
       }
@@ -39,14 +39,14 @@ footer {
     .flex-settings(row, space-between, center);
     .footer-nav-right {
       .flex-settings(row, space-between, center);
-      @media @mobile {
+      @media @mobile, @tablet {
         flex-direction: column;
         align-items: center;
         text-align: center;
       }
       .nav-item {
         .dot-before-nav-item();
-        @media @mobile {
+        @media @mobile, @tablet {
           &::before {
             content: "";
           }

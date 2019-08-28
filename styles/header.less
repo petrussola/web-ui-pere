@@ -6,10 +6,11 @@ header {
   .flex-settings(row, space-between, center);
   &.login-page {
     @media @mobile {
-      height: 7rem;
+      // height: 7rem;
     }
   }
-  @media @mobile {
+
+  @media @mobile, @tablet {
     .flex-settings(column, center, center);
     width: 100%;
     height: 12rem;
@@ -34,7 +35,7 @@ header {
       margin-right: 2rem;
     }
     &.login-page {
-      @media @mobile {
+      @media @mobile, @tablet {
         display: none;
       }
     }

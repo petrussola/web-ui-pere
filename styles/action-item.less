@@ -6,7 +6,7 @@
       padding: 0 10%;
       .flex-settings(row, flex-start, center);
       position: relative;
-      @media @mobile {
+      @media @mobile, @tablet {
         height: 150px;
         justify-content: center;
         text-align: center;
@@ -20,7 +20,7 @@
           top: 75px;
           left: 20%;
           transform: rotate(45deg);
-          @media @mobile {
+          @media @mobile, @tablet {
             top: 125px;
             left: 40%;
           }
@@ -32,7 +32,7 @@
         background-size: cover;
         padding: 3rem 10%;
         .flex-settings(column, center, flex-start);
-        @media @mobile {
+        @media @mobile, @tablet {
           align-items: center;
           text-align: center;
         }

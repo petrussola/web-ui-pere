@@ -233,11 +233,8 @@ header {
   align-items: center;
 }
 @media (max-width: 500px) {
-  header.login-page {
-    height: 7rem;
-  }
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   header {
     display: flex;
     flex-direction: column;
@@ -282,7 +279,7 @@ header .nav-right {
 header .nav-right .nav-item {
   margin-right: 2rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   header .nav-right.login-page {
     display: none;
   }
@@ -336,7 +333,7 @@ header .nav-right .nav-item {
   flex-wrap: wrap;
   padding: 100px 0;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   .main-content {
     width: 100%;
     flex-flow: column nowrap;
@@ -353,7 +350,7 @@ header .nav-right .nav-item {
   justify-content: space-evenly;
   align-items: flex-start;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   .main-content .main-content-section {
     padding: 0 2rem;
     width: 100%;
@@ -364,7 +361,7 @@ header .nav-right .nav-item {
   width: 90%;
   height: auto;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   .main-content .main-content-section.all-width {
     width: 100%;
     align-items: center;
@@ -422,14 +419,14 @@ header .nav-right .nav-item {
   width: 300px;
   height: 300px;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   .main-content .main-content-section .main-content-photo {
     height: 400px;
     width: 100%;
     text-align: center;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   .main-content .main-content-section .main-content-photo img {
     width: auto;
     height: 100%;
@@ -452,7 +449,7 @@ header .nav-right .nav-item {
   align-items: center;
   position: relative;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   .action-item .action-item-top {
     height: 150px;
     justify-content: center;
@@ -469,7 +466,7 @@ header .nav-right .nav-item {
   left: 20%;
   transform: rotate(45deg);
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   .action-item .action-item-top::after {
     top: 125px;
     left: 40%;
@@ -485,7 +482,7 @@ header .nav-right .nav-item {
   justify-content: center;
   align-items: flex-start;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   .action-item .action-item-bottom {
     align-items: center;
     text-align: center;
@@ -506,7 +503,7 @@ footer .footer-top {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   footer .footer-top {
     flex-direction: column;
     padding-top: 2rem;
@@ -538,7 +535,7 @@ footer .footer-top .footer-top-nav {
   border-left: 1px solid #E7EBE0;
   padding: 0 3rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   footer .footer-top .footer-top-nav {
     align-items: center;
     border-left: none;
@@ -560,7 +557,7 @@ footer .footer-bottom .footer-nav-right {
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   footer .footer-bottom .footer-nav-right {
     flex-direction: column;
     align-items: center;
@@ -577,7 +574,7 @@ footer .footer-bottom .footer-nav-right .nav-item::before {
   left: -1rem;
   position: absolute;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   footer .footer-bottom .footer-nav-right .nav-item::before {
     content: "";
   }
@@ -592,7 +589,7 @@ footer .footer-bottom .footer-nav-right .nav-item::before {
   align-items: flex-start;
   padding: 2rem 0 2rem 7.5%;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   .jumbotron {
     align-items: center;
     text-align: center;
@@ -618,12 +615,12 @@ footer .footer-bottom .footer-nav-right .nav-item::before {
   top: 100px;
   height: 500px;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   .floating.login-page {
     top: 150px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   .floating {
     display: flex;
     flex-direction: column;
@@ -646,7 +643,7 @@ footer .footer-bottom .footer-nav-right .nav-item::before {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   .floating .float-left-image {
     width: 100%;
   }
@@ -672,7 +669,7 @@ footer .footer-bottom .footer-nav-right .nav-item::before {
   margin: 1rem 0;
   padding: 1rem 0;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   .floating .float-right-text .text-input-wrapper .text-input {
     width: 100%;
   }
@@ -704,12 +701,12 @@ footer .footer-bottom .footer-nav-right .nav-item::before {
   height: 3rem;
   font-size: 1rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   .floating .float-right-text button {
     width: 100%;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   .floating .float-right-text {
     width: 100%;
   }

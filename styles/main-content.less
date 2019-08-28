@@ -3,7 +3,7 @@
   .flex-settings(row, center, center);
   flex-wrap: wrap;
   padding: 100px 0;
-  @media @mobile {
+  @media @mobile, @tablet {
       width: 100%;
       flex-flow: column nowrap;
       padding: 5rem 0 0 0;
@@ -14,7 +14,7 @@
       width: 45%;
       height: 300px;
       .flex-settings(column, space-evenly, flex-start);
-      @media @mobile {
+      @media @mobile, @tablet {
         padding: 0 2rem;
         width: 100%;
         height: 320px;
@@ -22,7 +22,7 @@
     &.all-width {
       width: 90%;
       height: auto;
-      @media @mobile {
+      @media @mobile, @tablet {
         width: 100%;
         align-items: center;
         text-align: center;
@@ -82,13 +82,13 @@
     .main-content-photo {
         width: 300px;
         height: 300px;
-        @media @mobile {
+        @media @mobile, @tablet {
           height: 400px;
           width: 100%;
           text-align:center;
         }
         img {
-          @media @mobile {
+          @media @mobile, @tablet {
             width: auto;
             height: 100%;
             text-align: center;

@@ -11,11 +11,11 @@
   &.login-page {
     top: 100px;
     height: 500px;
-    @media @mobile {
+    @media @mobile, @tablet {
         top: 150px;
     }
   }
-  @media @mobile {
+  @media @mobile, @tablet {
     .flex-settings(column, space-between, center);
     flex-wrap: nowrap;
     top: 550px;
@@ -29,7 +29,7 @@
     width: 30%;
     background-color: @background-blue-photo;
     .flex-settings(row, center, center);
-    @media @mobile {
+    @media @mobile, @tablet {
       width: 100%;
     }
     img {
@@ -51,7 +51,7 @@
         width: 70%;
         margin: 1rem 0;
         padding: 1rem 0;
-        @media @mobile {
+        @media @mobile, @tablet {
             width: 100%;
         }
       }
@@ -76,11 +76,11 @@
         margin: 1rem 0;
         height: 3rem;
         font-size: 1rem;
-        @media @mobile {
+        @media @mobile, @tablet {
             width: 100%;
         }
     }
-    @media @mobile {
+    @media @mobile, @tablet {
       width: 100%;
     }
   }
