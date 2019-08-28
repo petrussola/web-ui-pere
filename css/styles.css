@@ -208,6 +208,9 @@ h5 {
   flex-direction: column;
   position: relative;
 }
+.placeholder-empty-page {
+  height: 600px;
+}
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
@@ -597,6 +600,10 @@ footer .footer-bottom .footer-nav-right .nav-item::before {
   background-color: white;
   border-radius: 0.5rem;
 }
+.floating.login-page {
+  top: 100px;
+  height: 500px;
+}
 @media (max-width: 500px) {
   .floating {
     display: flex;
@@ -633,6 +640,25 @@ footer .footer-bottom .footer-nav-right .nav-item::before {
 .floating .float-right-text {
   width: 70%;
   padding: 2rem;
+}
+.floating .float-right-text .text-input-wrapper {
+  position: relative;
+}
+.floating .float-right-text .text-input-wrapper .text-input {
+  display: block;
+  border: 1px solid red;
+  border-radius: 0.25rem;
+  height: 3rem;
+  width: 50%;
+  margin: 1rem 0;
+}
+.floating .float-right-text .text-input-wrapper::before {
+  content: "testtest";
+  position: absolute;
+  top: -0.5rem;
+  left: 1rem;
+  background-color: #FFFFFF;
+  padding: 0 1rem;
 }
 @media (max-width: 500px) {
   .floating .float-right-text {
