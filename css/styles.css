@@ -409,7 +409,6 @@ header .nav-right .nav-item {
   .main-content .main-content-section .main-content-photo {
     height: 400px;
     width: 100%;
-    background: red;
     text-align: center;
   }
 }
@@ -439,6 +438,8 @@ header .nav-right .nav-item {
 @media (max-width: 500px) {
   .action-item .action-item-top {
     height: 150px;
+    justify-content: center;
+    text-align: center;
   }
 }
 .action-item .action-item-top::after {
