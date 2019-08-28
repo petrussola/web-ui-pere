@@ -343,6 +343,9 @@ header .nav-right .nav-item {
     padding: 5rem 0 0 0;
   }
 }
+.main-content.about-page {
+  padding: 5vh 0;
+}
 .main-content .main-content-section {
   position: relative;
   padding: 1rem 3rem;
