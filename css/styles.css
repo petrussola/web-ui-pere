@@ -610,7 +610,7 @@ footer .footer-bottom .footer-nav-right .nav-item::before {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 2rem 10%;
+  padding: 2rem 0 2rem 7.5%;
 }
 @media (max-width: 500px) {
   .jumbotron {
