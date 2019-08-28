@@ -208,63 +208,6 @@ h5 {
   flex-direction: column;
   position: relative;
 }
-.floating {
-  width: 85%;
-  margin: 0 auto;
-  position: absolute;
-  top: 375px;
-  left: 7.5%;
-  height: 250px;
-  box-shadow: 0.1rem 0.1rem 1rem #767676;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: white;
-  border-radius: 0.5rem;
-}
-@media (max-width: 500px) {
-  .floating {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
-    top: 550px;
-    height: 500px;
-    z-index: 1;
-  }
-}
-.floating .float-left-image {
-  border-top-left-radius: 0.5rem;
-  border-bottom-left-radius: 0.5rem;
-  height: 250px;
-  max-width: 30%;
-  background-color: #BEEEF5;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-@media (max-width: 500px) {
-  .floating .float-left-image {
-    max-width: 100%;
-  }
-}
-.floating .float-left-image img {
-  max-width: auto;
-  height: 90%;
-  margin: 0 auto;
-}
-.floating .float-right-text {
-  max-width: 70%;
-  padding: 2rem;
-}
-@media (max-width: 500px) {
-  .floating .float-right-text {
-    max-width: 100%;
-  }
-}
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
@@ -616,5 +559,62 @@ footer .footer-bottom .footer-nav-right .nav-item::before {
   .jumbotron {
     align-items: center;
     text-align: center;
+  }
+}
+.floating {
+  width: 85%;
+  margin: 0 auto;
+  position: absolute;
+  top: 375px;
+  left: 7.5%;
+  height: 250px;
+  box-shadow: 0.1rem 0.1rem 1rem #767676;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+@media (max-width: 500px) {
+  .floating {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    top: 550px;
+    height: 500px;
+    z-index: 1;
+  }
+}
+.floating .float-left-image {
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  height: 250px;
+  max-width: 30%;
+  background-color: #BEEEF5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .floating .float-left-image {
+    max-width: 100%;
+  }
+}
+.floating .float-left-image img {
+  max-width: auto;
+  height: 90%;
+  margin: 0 auto;
+}
+.floating .float-right-text {
+  max-width: 70%;
+  padding: 2rem;
+}
+@media (max-width: 500px) {
+  .floating .float-right-text {
+    max-width: 100%;
   }
 }
