@@ -1,6 +1,7 @@
 .main-content {
   .reduced-width();
   .flex-settings(row, center, center);
+  flex-wrap: wrap;
   padding: 100px 0;
   @media @mobile {
       flex-flow: column nowrap;
@@ -8,7 +9,7 @@
   }
   .main-content-section {
     position: relative;
-    padding: 0 3rem;
+    padding: 1rem 3rem;
     width: 45%;
     height: 300px;
     .flex-settings(column, space-evenly, flex-start);

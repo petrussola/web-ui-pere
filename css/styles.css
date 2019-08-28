@@ -316,6 +316,7 @@ header .nav-right .nav-item {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   padding: 100px 0;
 }
 @media (max-width: 500px) {
@@ -326,7 +327,7 @@ header .nav-right .nav-item {
 }
 .main-content .main-content-section {
   position: relative;
-  padding: 0 3rem;
+  padding: 1rem 3rem;
   width: 45%;
   height: 300px;
   display: flex;
