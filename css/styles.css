@@ -605,6 +605,11 @@ footer .footer-bottom .footer-nav-right .nav-item::before {
   height: 500px;
 }
 @media (max-width: 500px) {
+  .floating.login-page {
+    top: 200px;
+  }
+}
+@media (max-width: 500px) {
   .floating {
     display: flex;
     flex-direction: column;
@@ -653,6 +658,11 @@ footer .footer-bottom .footer-nav-right .nav-item::before {
   margin: 1rem 0;
   padding: 1rem 0;
 }
+@media (max-width: 500px) {
+  .floating .float-right-text .text-input-wrapper .text-input {
+    width: 100%;
+  }
+}
 .floating .float-right-text .text-input-wrapper::before {
   content: "";
   position: absolute;
@@ -679,6 +689,11 @@ footer .footer-bottom .footer-nav-right .nav-item::before {
   margin: 1rem 0;
   height: 3rem;
   font-size: 1rem;
+}
+@media (max-width: 500px) {
+  .floating .float-right-text button {
+    width: 100%;
+  }
 }
 @media (max-width: 500px) {
   .floating .float-right-text {
