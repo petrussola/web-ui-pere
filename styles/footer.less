@@ -6,8 +6,8 @@ footer {
     background: @background-gray;
     .flex-settings(row, center, center);
     @media @mobile {
-        flex-direction: column;
-        padding-top: 2rem;
+      flex-direction: column;
+      padding-top: 2rem;
     }
     .footer-top-header {
       .flex-settings(column, center, center);
@@ -26,7 +26,8 @@ footer {
       border-left: 1px solid @menu-separator-footer;
       padding: 0 3rem;
       @media @mobile {
-          align-items: center;
+        align-items: center;
+        border-left: none;
       }
     }
   }
@@ -39,14 +40,16 @@ footer {
     .footer-nav-right {
       .flex-settings(row, space-between, center);
       @media @mobile {
-          flex-direction: column;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
       }
       .nav-item {
         .dot-before-nav-item();
         @media @mobile {
-            &::before {
-                content: "";
-            }
+          &::before {
+            content: "";
+          }
         }
       }
     }
