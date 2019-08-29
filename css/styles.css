@@ -380,16 +380,15 @@ header .nav-right .nav-item {
 }
 .main-content .main-content-section.section-about-page {
   width: 100%;
-  border: 1px solid red;
   height: 33.33333333vh;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  border-bottom: 1px solid #E7EBE0;
 }
 .main-content .main-content-section.section-about-page .about-people-photo {
   width: 50%;
-  border: 1px solid purple;
   display: flex;
   flex-direction: rowx;
   justify-content: center;
@@ -403,11 +402,9 @@ header .nav-right .nav-item {
   height: 12rem;
 }
 .main-content .main-content-section.section-about-page .about-people-content {
-  border: 1px solid purple;
   width: 50%;
 }
 .main-content .main-content-section:nth-child(even) {
-  border: 1px solid purple;
   flex-direction: row-reverse;
 }
 .main-content .main-content-section .window {

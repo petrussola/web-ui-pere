@@ -37,13 +37,14 @@
     }
     &.section-about-page {
       width: 100%;
-      border: 1px solid red;
+      // border: 1px solid red;
       height: @heigh-content-about-page;
       .flex-settings(row, space-evenly, center);
+      border-bottom: 1px solid @menu-separator-footer;
       .about-people-photo {
         width: 50%;
         // height: @default-height;
-        border: 1px solid purple;
+        // border: 1px solid purple;
         // height: 100%;
         .flex-settings(rowx, center, center);
         img {
@@ -58,12 +59,12 @@
         }
       }
       .about-people-content {
-        border: 1px solid purple;
+        // border: 1px solid purple;
         width: 50%;
       }
     }
     &:nth-child(even) {
-      border: 1px solid purple;
+      // border: 1px solid purple;
       flex-direction: row-reverse;
 
     }
