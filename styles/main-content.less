@@ -41,12 +41,21 @@
       height: @heigh-content-about-page;
       .flex-settings(row, space-evenly, center);
       border-bottom: 1px solid @menu-separator-footer;
+      @media @mobile {
+        flex-direction: column;
+      }
       .about-people-photo {
         width: 50%;
         // height: @default-height;
         // border: 1px solid purple;
         // height: 100%;
-        .flex-settings(rowx, center, center);
+        .flex-settings(row, center, center);
+        @tablet {
+          width: 33%;
+        }
+        @media @mobile {
+          width: 100%;
+        }
         img {
           border-radius: 50%;
           object-fit: cover;
@@ -56,17 +65,41 @@
           // max-height: 100%;
           width: 12rem;
           height: 12rem;
+          @media @mobile, @tablet {
+            width: 8rem;
+            height: 8rem;
+          }
         }
       }
       .about-people-content {
         // border: 1px solid purple;
         width: 50%;
+        @media @tablet {
+          p {
+            font-size: 0.8rem;
+          }
+          h2 {
+            font-size: 1rem;
+          }
+        }
+        @media @mobile {
+          width: 100%;
+          .flex-settings(row, space-evenly, center);
+          p {
+            font-size: 0.8rem;
+          }
+          h2 {
+            font-size: 1rem;
+          }
+        }
       }
     }
     &:nth-child(even) {
       // border: 1px solid purple;
       flex-direction: row-reverse;
-
+      @media @mobile {
+        flex-direction: column;
+      }
     }
 
     .window {

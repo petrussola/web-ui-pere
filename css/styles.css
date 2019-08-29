@@ -387,12 +387,25 @@ header .nav-right .nav-item {
   align-items: center;
   border-bottom: 1px solid #E7EBE0;
 }
+@media (max-width: 500px) {
+  .main-content .main-content-section.section-about-page {
+    flex-direction: column;
+  }
+}
 .main-content .main-content-section.section-about-page .about-people-photo {
   width: 50%;
   display: flex;
-  flex-direction: rowx;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+@tablet {
+  width: 33%;
+}
+@media (max-width: 500px) {
+  .main-content .main-content-section.section-about-page .about-people-photo {
+    width: 100%;
+  }
 }
 .main-content .main-content-section.section-about-page .about-people-photo img {
   border-radius: 50%;
@@ -401,11 +414,45 @@ header .nav-right .nav-item {
   width: 12rem;
   height: 12rem;
 }
+@media (max-width: 500px), (max-width: 800px) {
+  .main-content .main-content-section.section-about-page .about-people-photo img {
+    width: 8rem;
+    height: 8rem;
+  }
+}
 .main-content .main-content-section.section-about-page .about-people-content {
   width: 50%;
 }
+@media (max-width: 800px) {
+  .main-content .main-content-section.section-about-page .about-people-content p {
+    font-size: 0.8rem;
+  }
+  .main-content .main-content-section.section-about-page .about-people-content h2 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .main-content .main-content-section.section-about-page .about-people-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .main-content .main-content-section.section-about-page .about-people-content p {
+    font-size: 0.8rem;
+  }
+  .main-content .main-content-section.section-about-page .about-people-content h2 {
+    font-size: 1rem;
+  }
+}
 .main-content .main-content-section:nth-child(even) {
   flex-direction: row-reverse;
+}
+@media (max-width: 500px) {
+  .main-content .main-content-section:nth-child(even) {
+    flex-direction: column;
+  }
 }
 .main-content .main-content-section .window {
   width: 300px;
