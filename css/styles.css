@@ -378,6 +378,24 @@ header .nav-right .nav-item {
     text-align: center;
   }
 }
+.main-content .main-content-section.section-about-page {
+  width: 100%;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.main-content .main-content-section.section-about-page .about-people-photo {
+  width: 45%;
+  border: 1px solid purple;
+  height: 100%;
+}
+.main-content .main-content-section.section-about-page .about-people-photo img {
+  border-radius: 50%;
+  max-width: 100%;
+  max-height: 100%;
+}
 .main-content .main-content-section .window {
   width: 300px;
   height: 200px;
