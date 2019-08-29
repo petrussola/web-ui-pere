@@ -380,6 +380,7 @@ header .nav-right .nav-item {
 }
 .main-content .main-content-section.section-about-page {
   width: 100%;
+  padding: 1rem 0;
   height: 33.33333333vh;
   display: flex;
   flex-direction: row;
@@ -411,8 +412,8 @@ header .nav-right .nav-item {
   border-radius: 50%;
   object-fit: cover;
   object-position: 10% 10%;
-  width: 12rem;
-  height: 12rem;
+  width: 30.33333333vh;
+  height: 30.33333333vh;
 }
 @media (max-width: 500px), (max-width: 800px) {
   .main-content .main-content-section.section-about-page .about-people-photo img {
