@@ -406,6 +406,10 @@ header .nav-right .nav-item {
   border: 1px solid purple;
   width: 50%;
 }
+.main-content .main-content-section:nth-child(even) {
+  border: 1px solid purple;
+  flex-direction: row-reverse;
+}
 .main-content .main-content-section .window {
   width: 300px;
   height: 200px;
