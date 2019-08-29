@@ -38,23 +38,27 @@
     &.section-about-page {
       width: 100%;
       border: 1px solid red;
+      height: @heigh-content-about-page;
       .flex-settings(row, space-evenly, center);
       .about-people-photo {
         width: 50%;
         // height: @default-height;
         border: 1px solid purple;
-        height: 100%;
+        // height: 100%;
+        .flex-settings(rowx, center, center);
         img {
           border-radius: 50%;
           object-fit: cover;
           object-position: 10% 10%;
+          // text-align: center;
           // max-width: 100%;
           // max-height: 100%;
-          width:12rem;
+          width: 12rem;
           height: 12rem;
         }
       }
       .about-people-content {
+        border: 1px solid purple;
         width: 50%;
       }
     }
