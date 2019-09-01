@@ -6,5 +6,3 @@ Welcome to my first build week project: I'll serve soup. This is a "simple" HTML
 - Run `npm install`
 - To fire server `npm run server`
 - To compile the less `npm run less`
-
-this is a test branch 
